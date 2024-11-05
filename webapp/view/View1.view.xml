@@ -1,0 +1,11 @@
+<mvc:View controllerName="rbx.107.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page title="{i18n>title}">
+        <content >
+            	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Submit Request" press="onNav2" />
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Approve Reject" press="onNav3" />
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Report" press="onNav4" />
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="rbx.107.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="Camera Capture">
+        <content>
+            <Button text="Open Camera" press="onOpeningCam"/>
+            <VBox id="cont" width="300px" height="auto" />
+            <Button text="Take Picture" press=".onTakePicture" />
+            <Text id="imageInfo" />
+            <Image id="capturedImage" src="" width="300px" />
+        </content>
+    </Page>
+</mvc:View>

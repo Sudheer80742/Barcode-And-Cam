@@ -1,0 +1,142 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "rbx.107",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.15.1",
+      "toolsId": "aa0c7de1-4b3c-4237-ada6-05716c437930"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.129.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ndc": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "rbx.107.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "rbx.107.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteView1",
+          "pattern": ":?query:",
+          "target": [
+            "TargetView1"
+          ]
+        },
+        {
+          "name": "RouteView2",
+          "pattern": "view2",
+          "target": [
+            "TargetView2"
+          ]
+        },
+        {
+          "name": "RouteView3",
+          "pattern": "view3",
+          "target": [
+            "TargetView3"
+          ]
+        },
+        {
+          "name": "RouteView4",
+          "pattern": "view4",
+          "target": [
+            "TargetView4"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetView1": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View1",
+          "viewName": "View1"
+        },
+        "TargetView2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View2",
+          "viewName": "View2"
+        },
+        "TargetView3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View3",
+          "viewName": "View3"
+        },
+        "TargetView4": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View4",
+          "viewName": "View4"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "rbx.107.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}
